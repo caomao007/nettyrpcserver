@@ -4,8 +4,6 @@ import com.xxx.entities.GloablBean;
 import com.xxx.servers.HttpReqServer;
 import com.xxx.servers.WebSocketServer;
 
-import io.netty.channel.local.LocalAddress;
-
 /**
  * 
  * @author wangzhen
