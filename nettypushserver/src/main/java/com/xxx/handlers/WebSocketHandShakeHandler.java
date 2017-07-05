@@ -1,5 +1,6 @@
 package com.xxx.handlers;
 
+import java.io.Serializable;
 import java.nio.charset.Charset;
 import com.xxx.entities.GloablBean;
 import com.xxx.utils.GlobalConstant;
@@ -29,8 +30,12 @@ import io.netty.util.CharsetUtil;
  * 有合作需求请发邮件，非诚勿扰
  */
 
-public class WebSocketHandShakeHandler extends SimpleChannelInboundHandler<Object> {
+public class WebSocketHandShakeHandler extends SimpleChannelInboundHandler<Object> implements Serializable {
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -6765032524878802955L;
 	private WebSocketServerHandshaker handshaker;
 	private GloablBean gloablBean;
 	public WebSocketHandShakeHandler(GloablBean gloablBean) {

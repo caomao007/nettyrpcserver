@@ -23,6 +23,8 @@ import io.netty.handler.codec.http.multipart.InterfaceHttpData;
 import io.netty.handler.codec.http.multipart.MemoryAttribute;
 import io.netty.handler.codec.http.websocketx.BinaryWebSocketFrame;
 import io.netty.util.CharsetUtil;
+
+import java.io.Serializable;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
@@ -36,7 +38,11 @@ import com.xxx.utils.GlobalConstant;
  * @emails 2502355536@qq.com
  * 有合作需求请发邮件，非诚勿扰
  */
-public class HttpReqHandler extends ChannelHandlerAdapter {
+public class HttpReqHandler extends ChannelHandlerAdapter implements Serializable{
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -2185360295990734225L;
 	private GloablBean gloablBean;
 
 	public HttpReqHandler(GloablBean gloablBean) {

@@ -1,4 +1,6 @@
 package com.xxx.channels;
+import java.io.Serializable;
+
 import com.xxx.entities.GloablBean;
 import com.xxx.handlers.WebSocketBinaryHandler;
 import com.xxx.handlers.WebSocketHandShakeHandler;
@@ -16,8 +18,12 @@ import io.netty.handler.timeout.ReadTimeoutHandler;
  * @emails 2502355536@qq.com
  * 有合作需求请发邮件，非诚勿扰
  */
-public class WebSocketChildChannels extends ChannelInitializer<SocketChannel>{
+public class WebSocketChildChannels extends ChannelInitializer<SocketChannel> implements Serializable{
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 6970185295635667552L;
 	private GloablBean gloablBean;
 
 	public WebSocketChildChannels(GloablBean gloablBean) {

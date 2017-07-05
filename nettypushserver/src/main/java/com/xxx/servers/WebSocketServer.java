@@ -5,11 +5,9 @@ import io.netty.channel.Channel;
 import io.netty.channel.EventLoopGroup;
 import io.netty.channel.nio.NioEventLoopGroup;
 import io.netty.channel.socket.nio.NioServerSocketChannel;
-
 import com.xxx.channels.WebSocketChildChannels;
 import com.xxx.entities.GloablBean;
 /**
- * 
  * @author wangzhen
  * @emails 2502355536@qq.com
  * 有合作需求请发邮件，非诚勿扰
