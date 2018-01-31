@@ -18,6 +18,15 @@ public class MainProcess {
         new Thread(new HttpReqServer(gloablBean)).start();
         new Thread(new WebSocketServer(gloablBean)).start();
 
+        
+        Runtime.getRuntime().addShutdownHook(new Thread(new Runnable() {
+			
+			public void run() {
+			 System.out.println("我要关闭了");
+			 
+			 
+			}
+		}));
 	}
 	
 	
