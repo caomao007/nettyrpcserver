@@ -7,6 +7,7 @@ import io.netty.channel.nio.NioEventLoopGroup;
 import io.netty.channel.socket.nio.NioServerSocketChannel;
 import com.xxx.channels.WebSocketChildChannels;
 import com.xxx.entities.GloablBean;
+
 /**
  * @author wangzhen
  * @emails 2502355536@qq.com
